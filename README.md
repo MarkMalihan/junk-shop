@@ -1,10 +1,17 @@
-# 🧰 junk-shop
+<div style="text-align: center;">
 
-A tiny app store for my random projects. Each app has its own page in this repo.
+![Junk Shop](assets/junk-shop-logo.png)
 
-## Apps
+<p style="font-weight: bold; font-size: 1.5em; margin: 0.5em 0; border: none;">Junk Shop</p>
 
-- [Project A](apps/project-a.md) — short description
-- [Project B](apps/project-b.md) — short description
+A tiny collection for my random projects.
+
+</div>
+
+| Name                                                                                            | Description                                                                                                    |
+| :---------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------- |
+| ![](items/local-memo/assets/32x32.png) **[Local Memo](items/local-memo/local-memo-details.md)** | Local-first desktop notes. Profiles, folders, tags, Markdown, images, threaded comments. No account, no cloud. |
+
+---
 
 Just a small collection for now.
