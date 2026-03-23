@@ -8,10 +8,7 @@ A tiny collection for my random projects.
 
 </div>
 
-| Name                                                                                            | Description                                                                                                    |
-| :---------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------- |
-| ![](items/local-memo/assets/32x32.png) **[Local Memo](items/local-memo/local-memo-details.md)** | Local-first desktop notes. Profiles, folders, tags, Markdown, images, threaded comments. No account, no cloud. |
-
----
-
-Just a small collection for now.
+| Name                                                                                            | Description                                                                                                                               |
+| :---------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
+| ![](items/local-memo/assets/32x32.png) **[Local Memo](items/local-memo/local-memo-details.md)** | Local-first desktop notes. Profiles, folders, tags, Markdown, images, threaded comments. No account, no cloud.                            |
+| ![](items/puppy-eyes/assets/32x32.png) **[Puppy Eyes](items/puppy-eyes/puppy-eyes-detail.md)**  | Local-first desktop API client. Workspaces, collections, environments, request editor, response viewer, and themes. No account, no cloud. |
