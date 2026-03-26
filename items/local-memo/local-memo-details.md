@@ -1,6 +1,6 @@
 # Local Memo
 
-![Local Memo](assets/icon.png)
+![Local Memo](assets/128x128.png)
 
 **Your notes, on your machine.**
 

@@ -1,6 +1,6 @@
 # Puppy Eyes
 
-![Puppy Eyes](assets/icon.png)
+![Puppy Eyes](assets/128x128.png)
 
 **Your API workflows, on your machine.**
 
