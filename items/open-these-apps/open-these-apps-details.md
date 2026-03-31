@@ -18,24 +18,35 @@ The app is built with [Tauri](https://tauri.app) and [React](https://react.dev),
 
 ## Features
 
-| Feature | Description |
-| ------- | ----------- |
-| **Group Workspaces** | Create, select, update, and delete named groups of installed apps. |
-| **Installed Apps Picker** | Pull apps from your system and add them to a group quickly. |
-| **One-click Launch** | Open all apps in the selected group in one run action. |
-| **App Initials** | Shows initials-based avatars for each app for a consistent lightweight UI. |
-| **Permission Gate** | Explicit local consent before reading installed apps (stored with a 3-day TTL). |
-| **Local-first Storage** | Group and item data are saved in local SQLite, not cloud services. |
-| **Light/Dark Theme** | Built-in theme support for comfortable day and night usage. |
+| Feature                   | Description                                                                     |
+| ------------------------- | ------------------------------------------------------------------------------- |
+| **Group Workspaces**      | Create, select, update, and delete named groups of installed apps.              |
+| **Installed Apps Picker** | Pull apps from your system and add them to a group quickly.                     |
+| **One-click Launch**      | Open all apps in the selected group in one run action.                          |
+| **App Initials**          | Shows initials-based avatars for each app for a consistent lightweight UI.      |
+| **Permission Gate**       | Explicit local consent before reading installed apps (stored with a 3-day TTL). |
+| **Local-first Storage**   | Group and item data are saved in local SQLite, not cloud services.              |
+| **Light/Dark Theme**      | Built-in theme support for comfortable day and night usage.                     |
 
 ---
 
 ## Screenshots
 
-<!-- Add screenshots here when available -->
-<!-- e.g. ![Group list](screenshots/groups.png) -->
+<p align="center">
+  <img src="assets/Create.png" width="700" />
+</p>
 
-_Screenshots coming soon._
+<p align="center">
+  <img src="assets/Group.png" width="700" />
+</p>
+
+<p align="center">
+  <img src="assets/Update.png" width="700" />
+</p>
+
+<p align="center">
+  <img src="assets/Select-and-Open.png" width="700" />
+</p>
 
 ---
 
@@ -69,11 +80,11 @@ _Screenshots coming soon._
 
 ## Technical Details
 
-| | |
-| - | - |
+|                |                                                                                                       |
+| -------------- | ----------------------------------------------------------------------------------------------------- |
 | **Built with** | Tauri 2 (Rust), React 19, TypeScript, SQLite, React Query, Tailwind CSS, Shadcn (Radix UI primitives) |
-| **License** | MIT |
-| **Source** | [GitHub](https://github.com/your-username/open-these-apps) |
+| **License**    | MIT                                                                                                   |
+| **Source**     | [GitHub](https://github.com/your-username/open-these-apps)                                            |
 
 ---
 
