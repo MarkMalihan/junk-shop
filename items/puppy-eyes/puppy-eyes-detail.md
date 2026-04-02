@@ -32,11 +32,29 @@ Light and dark themes are included for comfortable day/night usage. The app is b
 
 ## Screenshots
 
-<!-- Add screenshots here when available -->
-<!-- e.g. ![Notes list](screenshots/notes.png) -->
+<p align="center">
+  <img src="assets/workspace.png" width="700" />
+</p>
 
-_Screenshots coming soon._
+<p align="center">
+  <img src="assets/environment.png" width="700" />
+</p>
 
+<p align="center">
+  <img src="assets/collections.png" width="700" />
+</p>
+
+<p align="center">
+  <img src="assets/create-request.png" width="700" />
+</p>
+
+<p align="center">
+  <img src="assets/body-types.png" width="700" />
+</p>
+
+<p align="center">
+  <img src="assets/send-request.png" width="700" />
+</p>
 ---
 
 ## What’s New
