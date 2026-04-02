@@ -55,6 +55,7 @@ Light and dark themes are included for comfortable day/night usage. The app is b
 <p align="center">
   <img src="assets/send-request.png" width="700" />
 </p>
+
 ---
 
 ## What’s New
