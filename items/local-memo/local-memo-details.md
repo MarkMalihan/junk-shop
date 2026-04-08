@@ -59,6 +59,7 @@ Light and dark themes are included, with an optional schedule (e.g. dark mode at
 <p align="center">
   <img src="assets/comment.png" width="700" />
 </p>
+
 ---
 
 ## What’s New
