@@ -32,11 +32,33 @@ Light and dark themes are included, with an optional schedule (e.g. dark mode at
 
 ## Screenshots
 
-<!-- Add screenshots here when available -->
-<!-- e.g. ![Notes list](screenshots/notes.png) -->
+<p align="center">
+  <img src="assets/profile.png" width="700" />
+</p>
 
-_Screenshots coming soon._
+<p align="center">
+  <img src="assets/folders.png" width="700" />
+</p>
 
+<p align="center">
+  <img src="assets/tags.png" width="700" />
+</p>
+
+<p align="center">
+  <img src="assets/create-note.png" width="700" />
+</p>
+
+<p align="center">
+  <img src="assets/feed.png" width="700" />
+</p>
+
+<p align="center">
+  <img src="assets/markdown.png" width="700" />
+</p>
+
+<p align="center">
+  <img src="assets/comment.png" width="700" />
+</p>
 ---
 
 ## What’s New
