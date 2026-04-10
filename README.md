@@ -4,7 +4,7 @@
 
 # Junk Shop
 
-*A tiny collection for my random projects.*
+_A tiny collection for my random projects._
 
 </div>
 
@@ -13,6 +13,7 @@
 ## Apps
 
 ### Local Memo
+
 <img src="items/local-memo/assets/32x32.png" align="left" />
 
 **Local-first desktop notes**
@@ -27,6 +28,7 @@ No account. No cloud. Just your notes.
 ---
 
 ### Puppy Eyes
+
 <img src="items/puppy-eyes/assets/32x32.png" align="left" />
 
 **Local-first API client**
@@ -41,6 +43,7 @@ Built for speed, privacy, and offline use.
 ---
 
 ### Open These Apps
+
 <img src="items/open-these-apps/assets/32x32.png" align="left" />
 
 **Launch your app sets in one click**
@@ -56,8 +59,8 @@ and open them all at once.
 
 ## Philosophy
 
-- **Local-first** — your data stays on your device  
-- **No accounts** — no signups, no tracking  
+- **Local-first** — your data stays on your device
+- **No accounts** — no signups, no tracking
 - **Fast & lightweight** — built with Tauri + Rust
 - **Probably worse (and weirder)** — existing ideas, rebuilt with unnecessary (but fun, ig) features… or trash in general
 
