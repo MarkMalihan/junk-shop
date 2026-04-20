@@ -23,6 +23,12 @@ import OTA_CREATE from "../../../items/open-these-apps/assets/Create.png"
 import OTA_UPDATE_GROUPS from "../../../items/open-these-apps/assets/Update.png"
 import OTA_OPEN from "../../../items/open-these-apps/assets/Select-and-Open.png"
 
+import LOCAL_CODE_ARCHIVE_ROOT from "../../../items/local-code-archive/assets/root.png"
+import LOCAL_CODE_ARCHIVE_REPO_PICKER from "../../../items/local-code-archive/assets/repo-picker.png"
+import LOCAL_CODE_ARCHIVE_FILE_TREE from "../../../items/local-code-archive/assets/file-tree.png"
+import LOCAL_CODE_ARCHIVE_CODE_VIEW from "../../../items/local-code-archive/assets/code-view.png"
+import LOCAL_CODE_ARCHIVE_MD_VIEW from "../../../items/local-code-archive/assets/md-view.png"
+
 export const PRODUCTS = [
     {
         id: "local-memo",
@@ -248,6 +254,28 @@ export const PRODUCTS = [
                 name: "Local-first",
                 description: "Trees and file reads happen on your device; workspace records stay local."
             },
+        ],
+        photos: [
+            {
+                src: LOCAL_CODE_ARCHIVE_ROOT,
+                alt: "local-code-archive-root"
+            },
+            {
+                src: LOCAL_CODE_ARCHIVE_REPO_PICKER,
+                alt: "local-code-archive-repo-picker"
+            },
+            {
+                src: LOCAL_CODE_ARCHIVE_FILE_TREE,
+                alt: "local-code-archive-file-tree"
+            },
+            {
+                src: LOCAL_CODE_ARCHIVE_CODE_VIEW,
+                alt: "local-code-archive-code-view"
+            },
+            {
+                src: LOCAL_CODE_ARCHIVE_MD_VIEW,
+                alt: "local-code-archive-md-view"
+            }
         ]
     },
 ];

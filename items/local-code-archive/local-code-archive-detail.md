@@ -35,7 +35,25 @@ The UI includes **light and dark** themes for comfortable reading. The app is bu
 
 ## Screenshots
 
-Screenshots can be added when you have captures of the sidebar (roots, repo selector, tree), the preview area, and theme variants.
+<p align="center">
+  <img src="assets/root.png" width="700" />
+</p>
+
+<p align="center">
+  <img src="assets/repo-picker.png" width="700" />
+</p>
+
+<p align="center">
+  <img src="assets/file-tree.png" width="700" />
+</p>
+
+<p align="center">
+  <img src="assets/code-view.png" width="700" />
+</p>
+
+<p align="center">
+  <img src="assets/md-view.png" width="700" />
+</p>
 
 ---
 
