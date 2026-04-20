@@ -22,7 +22,7 @@ export default function FeatureTable({ features }: FeatureTableProps) {
             {features.map((feature, index) => (
                 <div
                     key={index}
-                    className="grid grid-cols-5 border-b last:border-b-0"
+                    className="grid grid-cols-5 border-b last:border-b-0 bg-background"
                 >
                     <div className="col-span-1 p-2 text-sm font-medium">
                         {feature.name}

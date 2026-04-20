@@ -22,7 +22,7 @@ export default function ProductDetails() {
     return (
         <div className="max-w-5xl flex flex-col md:flex-row gap-3">
             <div className="space-y-3">
-                <section className="flex gap-3 rounded-sm">
+                <section className="flex gap-3 rounded-sm bg-background">
                     <img
                         src={product.image}
                         alt={product.name}
@@ -30,13 +30,13 @@ export default function ProductDetails() {
                     />
                     <div className="w-full space-y-3">
                         <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 p-2 border rounded-sm h-fit">
-                            <div className="flex items-baseline gap-2">
+                            <div className="flex items-baseline gap-2 bg-background">
                                 <h1 className="text-lg font-semibold">{product.name}</h1>
                                 <span className="text-sm text-muted-foreground">{product.version}</span>
                             </div>
                             <Button size={"sm"} className="bg-primary-700 dark:bg-primary-300" onClick={() => alert("Coming Soon!")}>Download</Button>
                         </div>
-                        <div className="flex items-center gap-3 p-2 border rounded-sm">
+                        <div className="flex items-center gap-3 p-2 border rounded-sm bg-background">
                             <h2 className="text-sm font-medium">Tags:</h2>
                             <div className="flex gap-2">
                                 {product.tags.map((tag, index) => (
@@ -49,7 +49,7 @@ export default function ProductDetails() {
                     </div>
                 </section>
 
-                <section className="p-2 border rounded-sm">
+                <section className="p-2 border rounded-sm bg-background">
                     <p className="text-sm">{product.description}</p>
                 </section>
 

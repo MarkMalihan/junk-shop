@@ -1,7 +1,7 @@
 import LOCAL_MEMO_IMAGE from "../../../items/local-memo/assets/icon.png";
 import PUPPY_EYES_IMAGE from "../../../items/puppy-eyes/assets/icon.png";
 import OPEN_THESE_APPS_IMAGE from "../../../items/open-these-apps/assets/icon.png";
-import JUNK_SHOP_IMAGE from "../../../assets/junk-shop-logo.png"
+import CODE_ARCHIVE_IMAGE from "../../../items/local-code-archive/assets/icon.png"
 
 import LOCAL_MEMO_PROFILE from "../../../items/local-memo/assets/profile.png"
 import LOCAL_MEMO_FOLDERS from "../../../items/local-memo/assets/folders.png"
@@ -209,17 +209,45 @@ export const PRODUCTS = [
         ]
     },
     {
-        id: "code-archive",
-        name: "Code Archive",
-        image: JUNK_SHOP_IMAGE,
-        tags: ["planned"],
-        description: "Just imagine if GitHub's Repositories tab has its own app",
-        version: "v0",
+        id: "local-code-archive",
+        name: "Local Code Archive",
+        image: CODE_ARCHIVE_IMAGE,
+        tags: ["ready", "no signature"],
+        description: "Local Code Archive is a desktop application for developers who want a fast, minimal way to navigate and read code on disk. Add one or more workspace roots (for example a parent folder that contains several clones), pick a repository under that root, then walk the folder tree and open files in the preview pane.",
+        version: "v0.1.0",
         features: [
             {
-                name: "Coming Soon",
-                description: "Coming Soon"
-            }
+                name: "Workspace roots",
+                description: "Register local directories (for example a projects folder) and switch between them."
+            },
+            {
+                name: "Repository picker",
+                description: "Choose which repo under the active root you are browsing."
+            },
+            {
+                name: "File tree",
+                description: "Expandable tree with loading from disk; optional search to filter the tree while you work."
+            },
+            {
+                name: "File preview",
+                description: "Open a file to see Markdown (preview or code), highlighted code/text, or an asset-oriented view when applicable."
+            },
+            {
+                name: "Copy",
+                description: "Copy the file body from the preview toolbar."
+            },
+            {
+                name: "Reveal in file manager",
+                description: "Open the current location in the OS file explorer where supported."
+            },
+            {
+                name: "Theme",
+                description: "Built-in light/dark modes."
+            },
+            {
+                name: "Local-first",
+                description: "Trees and file reads happen on your device; workspace records stay local."
+            },
         ]
     },
 ];

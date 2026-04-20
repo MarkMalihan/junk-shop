@@ -57,6 +57,21 @@ and open them all at once.
 
 ---
 
+### Local Code Archive
+
+<img src="items/local-code-archive/assets/32x32.png" align="left" />
+
+**Less friction when exploring your repos**
+
+Roots, repo picker, tree, and Markdown or syntax-highlighted code in the preview pane.  
+Skim clones on disk without a heavy editor—paths and contents stay local.
+
+→ [Open details](items/local-code-archive/local-code-archive-detail.md)
+
+<br clear="left"/>
+
+---
+
 ## Philosophy
 
 - **Local-first** — your data stays on your device
