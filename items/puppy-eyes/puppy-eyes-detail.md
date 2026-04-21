@@ -71,7 +71,7 @@ Light and dark themes are included for comfortable day/night usage. The app is b
 
 ## Requirements
 
-- **OS:** Windows, macOS, or Linux (Tauri builds for your platform)
+- **OS:** Windows
 - **Disk:** Minimal; app configuration and data are stored locally
 - **Network:** Required only when sending API requests
 

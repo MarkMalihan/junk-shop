@@ -70,7 +70,7 @@ The UI includes **light and dark** themes for comfortable reading. The app is bu
 
 ## Requirements
 
-- **OS:** Windows, macOS, or Linux (Tauri builds for your platform)
+- **OS:** Windows
 - **Disk:** Minimal; workspace metadata and app data are stored locally alongside your existing repos
 - **Network:** Not required for browsing local files; optional only if you use features that touch the network in the future
 

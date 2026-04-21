@@ -75,7 +75,7 @@ Light and dark themes are included, with an optional schedule (e.g. dark mode at
 
 ## Requirements
 
-- **OS:** Windows, macOS, or Linux (Tauri builds for your platform)
+- **OS:** Windows
 - **Disk:** Minimal; app and data are stored locally
 - **Network:** Not required for core usage (optional if you add sync later)
 

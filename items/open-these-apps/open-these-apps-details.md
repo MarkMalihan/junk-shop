@@ -63,7 +63,7 @@ The app is built with [Tauri](https://tauri.app) and [React](https://react.dev),
 
 ## Requirements
 
-- **OS:** Windows is currently the fully supported platform for installed-app listing and app launching
+- **OS:** Windows
 - **Disk:** Minimal; local database only
 - **Network:** Not required for core usage (except downloading/installing the app itself)
 

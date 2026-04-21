@@ -22,14 +22,14 @@ export default function ProductDetails() {
     return (
         <div className="max-w-5xl flex flex-col md:flex-row gap-3">
             <div className="space-y-3">
-                <section className="flex gap-3 rounded-sm bg-background">
+                <section className="flex gap-3 rounded-sm">
                     <img
                         src={product.image}
                         alt={product.name}
-                        className="size-30 border rounded-sm"
+                        className="size-30 border rounded-sm bg-background"
                     />
                     <div className="w-full space-y-3">
-                        <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 p-2 border rounded-sm h-fit">
+                        <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 p-2 border rounded-sm h-fit bg-background">
                             <div className="flex items-baseline gap-2 bg-background">
                                 <h1 className="text-lg font-semibold">{product.name}</h1>
                                 <span className="text-sm text-muted-foreground">{product.version}</span>
