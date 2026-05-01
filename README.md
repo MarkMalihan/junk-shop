@@ -72,6 +72,21 @@ Skim clones on disk without a heavy editor—paths and contents stay local.
 
 ---
 
+### Marites Bot
+
+<img src="items/marites-bot/assets/32x32.png" align="left" />
+
+**Local-first audio recorder**
+
+Microphone, system sound, or both on Windows; WAV on disk; optional **Whisper CLI** transcripts.  
+Paste a meeting link when you want—Marites joins in a separate browser window as its own attendee.
+
+→ [Open details](items/marites-bot/marites-bot-detail.md)
+
+<br clear="left"/>
+
+---
+
 ## Philosophy
 
 - **Local-first** — your data stays on your device

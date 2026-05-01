@@ -1,5 +1,7 @@
 # Marites Bot
 
+![Marites Bot](assets/128x128.png)
+
 **Local-first audio recorder**, with an **optional meeting bot** for transparent, consent-minded calls.
 
 ## What it is
@@ -24,24 +26,46 @@ The UI includes a **dashboard** (recorder + optional join + schedules + stats + 
 
 ## Features
 
-| Feature | What you get |
-| ------- | ------------- |
-| **Audio recording** | Mic, system, or both where supported; pause/resume; gain; WAV on disk plus entries in the app. Works with zero meeting features. |
-| **Optional meeting bot** | Checks meeting web links, launches a dedicated window with that link as a visible join; start/stop and status from the dashboard. Separate from Marites and your default browser; only opens the URL and keeps the session—no scripted chat consent. |
-| **Meeting activity logs** | Structured timeline while a bot session runs and you record; plain recording-only runs skip meeting-linked timeline rows—files still show under Recordings. |
-| **Recordings library** | List, in-app playback, open externally, reveal in explorer, delete. |
-| **Transcription (Whisper)** | Whisper CLI path + model path in Settings; run transcribe from the player; `.txt` under app data when done. |
-| **Schedules** | Titles, optional URL, times, reminders; **Join now** starts the meeting bot for the schedule you picked. |
-| **Dashboard stats** | Such as joins opened, recording count, total recording time, rough storage estimate for WAVs. |
-| **Persistence** | SQLite plus **recordings** and **transcripts** folders—default root `Documents/Local Apps/Marites Bot`, or override with **`MARITES_BOT_DB_DIR`**. |
-| **Theme** | Light/dark and optional schedule (e.g. dark at night). |
-| **Local-first** | No account or hosted backend for core recording, library, schedules, or local Whisper runs. |
+| Feature                     | What you get                                                                                                                                                                                                                                         |
+| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Audio recording**         | Mic, system, or both where supported; pause/resume; gain; WAV on disk plus entries in the app. Works with zero meeting features.                                                                                                                     |
+| **Optional meeting bot**    | Checks meeting web links, launches a dedicated window with that link as a visible join; start/stop and status from the dashboard. Separate from Marites and your default browser; only opens the URL and keeps the session—no scripted chat consent. |
+| **Meeting activity logs**   | Structured timeline while a bot session runs and you record; plain recording-only runs skip meeting-linked timeline rows—files still show under Recordings.                                                                                          |
+| **Recordings library**      | List, in-app playback, open externally, reveal in explorer, delete.                                                                                                                                                                                  |
+| **Transcription (Whisper)** | Whisper CLI path + model path in Settings; run transcribe from the player; `.txt` under app data when done.                                                                                                                                          |
+| **Schedules**               | Titles, optional URL, times, reminders; **Join now** starts the meeting bot for the schedule you picked.                                                                                                                                             |
+| **Dashboard stats**         | Such as joins opened, recording count, total recording time, rough storage estimate for WAVs.                                                                                                                                                        |
+| **Persistence**             | SQLite plus **recordings** and **transcripts** folders—default root `Documents/Local Apps/Marites Bot`, or override with **`MARITES_BOT_DB_DIR`**.                                                                                                   |
+| **Theme**                   | Light/dark and optional schedule (e.g. dark at night).                                                                                                                                                                                               |
+| **Local-first**             | No account or hosted backend for core recording, library, schedules, or local Whisper runs.                                                                                                                                                          |
 
 ---
 
 ## Screenshots
 
-Add captures of the dashboard (recorder + optional join), recordings list, player with transcript, schedules, and meeting logs when you have them.
+<p align="center">
+  <img src="assets/join-meeting.png" width="700" />
+</p>
+
+<p align="center">
+  <img src="assets/schedules.png" width="700" />
+</p>
+
+<p align="center">
+  <img src="assets/record.png" width="700" />
+</p>
+
+<p align="center">
+  <img src="assets/record-list.png" width="700" />
+</p>
+
+<p align="center">
+  <img src="assets/meeting-logs.png" width="700" />
+</p>
+
+<p align="center">
+  <img src="assets/player-transcript.png" width="700" />
+</p>
 
 ---
 
@@ -76,14 +100,14 @@ Add captures of the dashboard (recorder + optional join), recordings list, playe
 
 ## Technical details
 
-| | |
-| --- | --- |
-| **Shell** | Tauri 2 (Rust), Vite, React 19 |
-| **UI** | React Router 7, TanStack Query, Tailwind CSS 4, component library–style UI, toasts, theme switching, resizable panels |
-| **Backend** | SQLite, audio capture and WAV encoding in Rust; Windows loopback where used |
-| **Meeting bot** | Small Node helper that opens the URL in an automated Chromium build (generic URLs; Meet, Zoom manually tested) |
-| **License** | MIT (see `LICENSE`) |
-| **Source** | https://github.com/MarkMalihan/marites-bot |
+|                 |                                                                                                                       |
+| --------------- | --------------------------------------------------------------------------------------------------------------------- |
+| **Shell**       | Tauri 2 (Rust), Vite, React 19                                                                                        |
+| **UI**          | React Router 7, TanStack Query, Tailwind CSS 4, component library–style UI, toasts, theme switching, resizable panels |
+| **Backend**     | SQLite, audio capture and WAV encoding in Rust; Windows loopback where used                                           |
+| **Meeting bot** | Small Node helper that opens the URL in an automated Chromium build (generic URLs; Meet, Zoom manually tested)        |
+| **License**     | MIT (see `LICENSE`)                                                                                                   |
+| **Source**      | https://github.com/MarkMalihan/marites-bot                                                                            |
 
 ---
 
