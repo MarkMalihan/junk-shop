@@ -2,6 +2,7 @@ import LOCAL_MEMO_IMAGE from "../../../items/local-memo/assets/icon.png";
 import PUPPY_EYES_IMAGE from "../../../items/puppy-eyes/assets/icon.png";
 import OPEN_THESE_APPS_IMAGE from "../../../items/open-these-apps/assets/icon.png";
 import CODE_ARCHIVE_IMAGE from "../../../items/local-code-archive/assets/icon.png"
+import MARITES_BOT_IMAGE from "../../../items/marites-bot/assets/icon.png"
 
 import LOCAL_MEMO_PROFILE from "../../../items/local-memo/assets/profile.png"
 import LOCAL_MEMO_FOLDERS from "../../../items/local-memo/assets/folders.png"
@@ -29,12 +30,19 @@ import LOCAL_CODE_ARCHIVE_FILE_TREE from "../../../items/local-code-archive/asse
 import LOCAL_CODE_ARCHIVE_CODE_VIEW from "../../../items/local-code-archive/assets/code-view.png"
 import LOCAL_CODE_ARCHIVE_MD_VIEW from "../../../items/local-code-archive/assets/md-view.png"
 
+import MARITES_BOT_JOIN_MEETING from "../../../items/marites-bot/assets/join-meeting.png"
+import MARITES_BOT_RECORDINGS from "../../../items/marites-bot/assets/record-list.png"
+import MARITES_BOT_SCHEDULES from "../../../items/marites-bot/assets/schedules.png"
+import MARITES_BOT_MEETING_LOGS from "../../../items/marites-bot/assets/meeting-logs.png"
+import MARITES_BOT_PLAYER_TRANSCRIPT from "../../../items/marites-bot/assets/player-transcript.png"
+import MARITES_BOT_RECORD from "../../../items/marites-bot/assets/record.png"
+
 export const PRODUCTS = [
     {
         id: "local-memo",
         name: "Local Memo",
         image: LOCAL_MEMO_IMAGE,
-        tags: ["ready", "no signature"],
+        tags: ["local", "no signature"],
         description: "Local Memo is a desktop application built for people who want full control of their notes. Everything lives in a local SQLite database. Switch between profiles for different contexts (work, personal, projects), organize notes in folders, and use tags and filters to find what you need. Write in Markdown, attach images, and discuss ideas with threaded comments—right inside each note.",
         version: "v0.1.0",
         features: [
@@ -102,7 +110,7 @@ export const PRODUCTS = [
         id: "puppy-eyes",
         name: "Puppy Eyes",
         image: PUPPY_EYES_IMAGE,
-        tags: ["ready", "no signature"],
+        tags: ["local", "no signature"],
         description: "Puppy Eyes is a desktop application built for developers who want full control over their API workflow. Create and switch workspaces, organize endpoints in collections/folders, and define environments for different targets like local, staging, and production. Compose requests with method, URL, params, headers, and body (JSON/text/form-data), then inspect status, headers, and body in a structured response viewer.",
         version: "v0.1.0",
         features: [
@@ -166,7 +174,7 @@ export const PRODUCTS = [
         id: "open-these-apps",
         name: "Open These Apps",
         image: OPEN_THESE_APPS_IMAGE,
-        tags: ["ready", "no signature"],
+        tags: ["local", "no signature"],
         description: "Open These Apps helps you save startup time by turning repeated app-opening routines into one action. It reads your installed apps list (with local permission), lets you pick apps for each group, stores those groups locally, and launches them together when you hit Open.",
         version: "v0.1.0",
         features: [
@@ -218,7 +226,7 @@ export const PRODUCTS = [
         id: "local-code-archive",
         name: "Local Code Archive",
         image: CODE_ARCHIVE_IMAGE,
-        tags: ["ready", "no signature"],
+        tags: ["local", "no signature"],
         description: "Local Code Archive is a desktop application for developers who want a fast, minimal way to navigate and read code on disk. Add one or more workspace roots (for example a parent folder that contains several clones), pick a repository under that root, then walk the folder tree and open files in the preview pane.",
         version: "v0.1.0",
         features: [
@@ -276,6 +284,89 @@ export const PRODUCTS = [
                 src: LOCAL_CODE_ARCHIVE_MD_VIEW,
                 alt: "local-code-archive-md-view"
             }
+        ]
+    },
+    {
+        id: "marites-bot",
+        name: "Marites Bot",
+        image: MARITES_BOT_IMAGE,
+        tags: ["local", "no signature"],
+        description:
+            "A local-first desktop recorder: capture microphone, system sound, or both on Windows, save WAV, and manage clips without ever opening a meeting. If you want, start the optional meeting bot—paste a link and Marites joins in its own browser window as a visible attendee so the host can admit it and everyone knows a recording may be happening. Add schedules, dashboard stats, optional Whisper CLI transcripts, and light or dark theme; data stays on your machine.",
+        version: "v0.1.0",
+        features: [
+            {
+                name: "Audio recording",
+                description:
+                    "Record from mic, system audio, or both where supported; pause and resume; gain controls; saves WAV. Works with or without the meeting bot.",
+            },
+            {
+                name: "Optional meeting bot",
+                description:
+                    "Paste a meeting URL; Marites opens it in a separate window as its own participant (e.g. Meet, Zoom, Teams in the browser) until the host lets it in—only keeps the page open, no auto chat messages.",
+            },
+            {
+                name: "Meeting activity logs",
+                description:
+                    "When the meeting bot is active and you record, the app logs session-style activity alongside recordings. Recording alone still saves files, without those meeting-linked log entries.",
+            },
+            {
+                name: "Recordings library",
+                description:
+                    "List recordings, play in the app, open in your default player, reveal in the file explorer, or delete.",
+            },
+            {
+                name: "Transcription (Whisper)",
+                description:
+                    "In Settings, set paths to your Whisper CLI and model; transcribe from the player and keep .txt files next to your local data.",
+            },
+            {
+                name: "Schedules",
+                description:
+                    "Create meetings with optional links and reminders; use Join now to start the meeting bot from a chosen schedule row.",
+            },
+            {
+                name: "Dashboard stats",
+                description:
+                    "Summaries such as meetings joined, recording count, total duration, and rough disk use for WAV files.",
+            },
+            {
+                name: "Theme",
+                description:
+                    "Light or dark mode, with optional time-based switching (e.g. dark at night).",
+            },
+            {
+                name: "Local-first",
+                description:
+                    "Database and media folders on your PC; no vendor cloud for core recording and library flows. Data location can be redirected for advanced setups.",
+            },
+        ],
+        photos: [
+            {
+                src: MARITES_BOT_JOIN_MEETING,
+                alt: "marites-bot-join-meeting"
+            },
+            {
+                src: MARITES_BOT_SCHEDULES,
+                alt: "marites-bot-schedules"
+            },
+            {
+                src: MARITES_BOT_RECORD,
+                alt: "marites-bot-record"
+            },
+            {
+                src: MARITES_BOT_RECORDINGS,
+                alt: "marites-bot-recordings"
+            },
+            {
+                src: MARITES_BOT_MEETING_LOGS,
+                alt: "marites-bot-meeting-logs"
+            },
+            {
+                src: MARITES_BOT_PLAYER_TRANSCRIPT,
+                alt: "marites-bot-player-transcript"
+            },
+
         ]
     },
 ];
