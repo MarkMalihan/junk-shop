@@ -38,10 +38,12 @@ export function ProductGallery({
 
     return (
         <Dialog open={open} onOpenChange={onOpenChange}>
-            <DialogContent className="md:max-w-2xl lg:max-w-4xl xl:max-w-4xl flex max-h-[80vh] flex-col border bg-background p-0 shadow-lg">
-                <DialogTitle className="sr-only" />
-                {/* Header */}
-                <div className="flex justify-between items-center border-b p-3">
+            <DialogContent
+                showCloseButton={false}
+                className="fixed inset-0 z-50 flex h-dvh w-full max-w-none translate-x-0 translate-y-0 flex-col gap-0 rounded-none border-0 bg-background p-0 shadow-none outline-none sm:max-w-none"
+            >
+                <DialogTitle className="sr-only">Product images</DialogTitle>
+                <div className="flex shrink-0 items-center justify-between border-b p-3">
                     <span className="text-sm">
                         {index + 1} / {images.length}
                     </span>
@@ -50,29 +52,40 @@ export function ProductGallery({
                     </Button>
                 </div>
 
-                {/* Main Image */}
-                <div className="flex items-center justify-between p-4">
+                <div className="flex min-h-0 flex-1 items-stretch gap-2 px-3 py-3">
                     {hasMultiple && (
-                        <Button size="icon" onClick={prev}>
+                        <Button
+                            type="button"
+                            size="icon"
+                            className="shrink-0 self-center"
+                            onClick={prev}
+                        >
                             <ChevronLeft />
                         </Button>
                     )}
 
-                    <img
-                        src={images[index]}
-                        className="max-h-[22vh] md:max-h-[30vh] lg:max-h-[40vh] 2xl:max-h-[50vh] object-contain"
-                    />
+                    <div className="flex min-h-0 min-w-0 flex-1 items-center justify-center">
+                        <img
+                            src={images[index]}
+                            alt=""
+                            className="max-h-full max-w-full object-contain"
+                        />
+                    </div>
 
                     {hasMultiple && (
-                        <Button size="icon" onClick={next}>
+                        <Button
+                            type="button"
+                            size="icon"
+                            className="shrink-0 self-center"
+                            onClick={next}
+                        >
                             <ChevronRight />
                         </Button>
                     )}
                 </div>
 
-                {/* Thumbnails */}
                 {hasMultiple && (
-                    <div className="flex gap-2 overflow-x-auto p-3 border-t">
+                    <div className="flex shrink-0 gap-2 overflow-x-auto border-t p-3">
                         {images.map((img, i) => (
                             <img
                                 key={i}
