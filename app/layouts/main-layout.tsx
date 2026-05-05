@@ -1,4 +1,5 @@
 import { ThemeToggle } from "@/features/theme/components/theme-toggle";
+import { APP } from "@/shared/configs/app";
 import AppLoadingScreen from "@/shared/ui/app-loading-screen";
 import { Button } from "@/shared/ui/button";
 import { Suspense } from "react";
@@ -10,7 +11,7 @@ export default function MainLayout() {
             <div className="flex justify-between p-2">
                 <Button variant={"link"} asChild>
                     <Link to={""}>
-                        Junk Shop
+                        {APP.name}
                     </Link>
                 </Button>
                 <ThemeToggle />

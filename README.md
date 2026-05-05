@@ -2,7 +2,7 @@
 
 <img src="assets/junk-shop-logo.png" width="96" />
 
-# Junk Shop
+# Janku-ya
 
 _A tiny collection for my random projects._
 
