@@ -6,7 +6,7 @@ type feature = {
 }
 
 type FeatureTableProps = {
-    features: feature[]
+    features?: feature[]
 }
 
 export default function FeatureTable({ features }: FeatureTableProps) {
@@ -19,7 +19,7 @@ export default function FeatureTable({ features }: FeatureTableProps) {
             </div>
 
             {/* Rows */}
-            {features.map((feature, index) => (
+            {features && features.map((feature, index) => (
                 <div
                     key={index}
                     className="grid grid-cols-5 border-b last:border-b-0 bg-background"

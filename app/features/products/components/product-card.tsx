@@ -16,7 +16,7 @@ export default function ProductCard({ id, name, image, tags }: ProductCardProps)
                 <CardContent className="flex flex-col items-center justify-center space-y-3">
                     <h1 className="text-center">{name}</h1>
                     <img src={image} alt={name} className="size-20 object-cover mx-auto" />
-                    <div className="space-x-2">
+                    <div className="flex flex-wrap gap-2">
                         {tags.map((tag, index) => (
                             <Badge key={index} className="capitalize">{tag}</Badge>
                         ))}

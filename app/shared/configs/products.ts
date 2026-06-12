@@ -37,10 +37,32 @@ import MARITES_BOT_MEETING_LOGS from "../../../items/marites-bot/assets/meeting-
 import MARITES_BOT_PLAYER_TRANSCRIPT from "../../../items/marites-bot/assets/player-transcript.png"
 import MARITES_BOT_RECORD from "../../../items/marites-bot/assets/record.png"
 
-export const PRODUCTS = [
+import DEFAULT_IMAGE from "../../../assets/junk-shop-logo.png"
+
+type Product = {
+    id: string;
+    name: string;
+    type: string;
+    image: string;
+    tags: string[];
+    description: string;
+    version: string;
+    features?: {
+        name: string;
+        description: string;
+    }[],
+    photos?: {
+        src: string;
+        alt: string;
+    }[],
+    link: string;
+}
+
+export const PRODUCTS: Product[] = [
     {
         id: "local-memo",
         name: "Local Memo",
+        type: "desktop",
         image: LOCAL_MEMO_IMAGE,
         tags: ["local", "no signature"],
         description: "Local Memo is a desktop application built for people who want full control of their notes. Everything lives in a local SQLite database. Switch between profiles for different contexts (work, personal, projects), organize notes in folders, and use tags and filters to find what you need. Write in Markdown, attach images, and discuss ideas with threaded comments—right inside each note.",
@@ -104,11 +126,13 @@ export const PRODUCTS = [
                 src: LOCAL_MEMO_COMMENT,
                 alt: "local-memo-comment"
             },
-        ]
+        ],
+        link: "#"
     },
     {
         id: "puppy-eyes",
         name: "Puppy Eyes",
+        type: "desktop",
         image: PUPPY_EYES_IMAGE,
         tags: ["local", "no signature"],
         description: "Puppy Eyes is a desktop application built for developers who want full control over their API workflow. Create and switch workspaces, organize endpoints in collections/folders, and define environments for different targets like local, staging, and production. Compose requests with method, URL, params, headers, and body (JSON/text/form-data), then inspect status, headers, and body in a structured response viewer.",
@@ -168,11 +192,13 @@ export const PRODUCTS = [
                 src: PUPPY_EYES_SEND_REQUEST,
                 alt: "puppy-eyes-send-request"
             },
-        ]
+        ],
+        link: "#"
     },
     {
         id: "open-these-apps",
         name: "Open These Apps",
+        type: "desktop",
         image: OPEN_THESE_APPS_IMAGE,
         tags: ["local", "no signature"],
         description: "Open These Apps helps you save startup time by turning repeated app-opening routines into one action. It reads your installed apps list (with local permission), lets you pick apps for each group, stores those groups locally, and launches them together when you hit Open.",
@@ -220,11 +246,13 @@ export const PRODUCTS = [
                 src: OTA_OPEN,
                 alt: "open-these-apps-run-apps"
             }
-        ]
+        ],
+        link: "#"
     },
     {
         id: "local-code-archive",
         name: "Local Code Archive",
+        type: "desktop",
         image: CODE_ARCHIVE_IMAGE,
         tags: ["local", "no signature"],
         description: "Local Code Archive is a desktop application for developers who want a fast, minimal way to navigate and read code on disk. Add one or more workspace roots (for example a parent folder that contains several clones), pick a repository under that root, then walk the folder tree and open files in the preview pane.",
@@ -284,11 +312,13 @@ export const PRODUCTS = [
                 src: LOCAL_CODE_ARCHIVE_MD_VIEW,
                 alt: "local-code-archive-md-view"
             }
-        ]
+        ],
+        link: "#"
     },
     {
         id: "marites-bot",
         name: "Marites Bot",
+        type: "desktop",
         image: MARITES_BOT_IMAGE,
         tags: ["local", "no signature"],
         description:
@@ -367,6 +397,96 @@ export const PRODUCTS = [
                 alt: "marites-bot-player-transcript"
             },
 
-        ]
+        ],
+        link: "#"
     },
+    {
+        id: "ui-ide",
+        name: "UI IDE (temp. name)",
+        type: "desktop",
+        image: DEFAULT_IMAGE,
+        tags: ["local", "no signature", "on hold"],
+        description:
+            "UI IDE is a local-first desktop UI design tool for developers and designers who want a lightweight way to lay out interfaces without a full vector editor. Create component files for reusable pieces (buttons, cards, nav bars) and screen files for full app views. Draw with frames, shapes, text, and imported media; organize work in a layer tree; tune layout and appearance in the inspector; export JSON or raster images when you are ready. Light and dark themes are included. Built with Tauri and React, it stays fast on Windows. No account, no cloud, no lock-in.",
+        version: "v0.1.0",
+        features: [
+            {
+                name: "Screens & components",
+                description:
+                    "Two design types: screens for app views, components for reusable definitions stored under separate folders.",
+            },
+            {
+                name: "Drafts library",
+                description:
+                    "Browse, open, rename, and duplicate saved designs from a drafts hub with thumbnails.",
+            },
+            {
+                name: "Canvas editor",
+                description:
+                    "Select, pan, and draw frames, rectangles, ellipses, lines, and text; import images and video.",
+            },
+            {
+                name: "Layers",
+                description:
+                    "Hierarchical layer list with selection, rename, reorder, and parent frames for grouping.",
+            },
+            {
+                name: "Inspector",
+                description:
+                    "Edit position, size, rotation, text, fill, stroke, and corner radius from the side panel.",
+            },
+            {
+                name: "Components panel",
+                description:
+                    "Browse component files and insert their root layers into the open design (cloned into the current document).",
+            },
+            {
+                name: "History",
+                description:
+                    "Undo/redo with a labeled history list; keyboard shortcuts for common edits.",
+            },
+            {
+                name: "Spacing guides",
+                description: "Alignment hints while moving layers on the canvas.",
+            },
+            {
+                name: "Export",
+                description:
+                    "Export the current design as JSON (saved file format) or flattened PNG (and other raster options).",
+            },
+            {
+                name: "Theme",
+                description: "Light, dark, and system appearance.",
+            },
+            {
+                name: "Local-first",
+                description:
+                    "Designs, thumbnails, and metadata live on your device; no cloud account required.",
+            },
+        ],
+        link: "#"
+    },
+    {
+        id: "resto-menu",
+        name: "Restaurant Menu",
+        type: "static-website",
+        image: DEFAULT_IMAGE,
+        tags: ["restaurant", "static website"],
+        description:
+            "A modern restaurant website concept showcasing Filipino cuisine. Features a welcoming landing page, category-based digital menu, food detail pages, image galleries, and a mobile-friendly self-ordering kiosk inspired browsing experience. Designed as a static website showcase for restaurants, cafés, and food businesses looking for an elegant online presence.",
+        version: "v0.1.0",
+        link: "https://static-websites-nu.vercel.app/project/resto-menu",
+    },
+    {
+        id: "company-profile",
+        name: "Company Profile",
+        type: "static-website",
+        image: DEFAULT_IMAGE,
+        tags: ["business", "static website"],
+        description:
+            "A professional corporate website designed for businesses seeking a strong digital presence. Includes a modern homepage, company overview, services section, and contact information. Built as a static website example suitable for agencies, startups, consultants, and established companies.",
+        version: "v0.1.0",
+        link: "https://static-websites-nu.vercel.app/project/company-profile",
+    },
+
 ];

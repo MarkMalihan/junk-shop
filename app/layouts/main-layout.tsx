@@ -8,7 +8,7 @@ import { Link, Outlet } from "react-router";
 export default function MainLayout() {
     return (
         <div className="flex flex-col h-screen overflow-hidden">
-            <div className="flex justify-between p-2">
+            <div className="flex justify-between p-2 border-b">
                 <Button variant={"link"} asChild>
                     <Link to={""}>
                         {APP.name}

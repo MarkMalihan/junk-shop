@@ -1,4 +1,4 @@
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router";
 import { PRODUCTS } from "@/shared/configs/products";
 import { Badge } from "@/shared/ui/badge";
 import { Button } from "@/shared/ui/button";
@@ -34,7 +34,14 @@ export default function ProductDetails() {
                                 <h1 className="text-lg font-semibold">{product.name}</h1>
                                 <span className="text-sm text-muted-foreground">{product.version}</span>
                             </div>
-                            <Button size={"sm"} className="bg-primary-700 dark:bg-primary-300" onClick={() => alert("Coming Soon!")}>Download</Button>
+                            {product.type === "static-website" ? (
+                                <Button size={"sm"} className="bg-primary-700 dark:bg-primary-300" asChild>
+                                    <Link to={product.link} target="_blank">Visit</Link>
+                                </Button>
+                            ) : (
+                                <Button size={"sm"} className="bg-primary-700 dark:bg-primary-300" onClick={() => alert("Coming Soon!")}>Download</Button>
+                            )}
+
                         </div>
                         <div className="flex items-center gap-3 p-2 border rounded-sm bg-background">
                             <h2 className="text-sm font-medium">Tags:</h2>
@@ -53,7 +60,10 @@ export default function ProductDetails() {
                     <p className="text-sm">{product.description}</p>
                 </section>
 
-                <FeatureTable features={product.features!} />
+                {product.features && (
+                    <FeatureTable features={product.features} />
+                )}
+
             </div>
 
             <section className="md:h-[calc(100vh-200px)] xl:h-[calc(100vh-405px)] 2xl:h-[calc(100vh-370px)] space-y-3 md:pr-2 overflow-y-auto">
