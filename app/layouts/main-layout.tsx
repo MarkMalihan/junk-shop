@@ -6,21 +6,19 @@ import { Suspense } from "react";
 import { Link, Outlet } from "react-router";
 
 export default function MainLayout() {
-    return (
-        <div className="flex flex-col h-screen overflow-hidden">
-            <div className="flex justify-between p-2 border-b">
-                <Button variant={"link"} asChild>
-                    <Link to={""}>
-                        {APP.name}
-                    </Link>
-                </Button>
-                <ThemeToggle />
-            </div>
-            <main className="h-full flex flex-col md:flex-row md:flex-wrap md:items-center md:justify-center gap-3 p-3 overflow-auto">
-                <Suspense fallback={<AppLoadingScreen />}>
-                    <Outlet />
-                </Suspense>
-            </main>
-        </div>
-    );
+  return (
+    <div className="flex flex-col h-screen overflow-hidden">
+      <div className="flex justify-between p-2 border-b">
+        <Button variant="link" className="text-foreground" asChild>
+          <Link to={""}>{APP.name}</Link>
+        </Button>
+        <ThemeToggle />
+      </div>
+      <main className="h-full flex flex-col md:flex-row md:flex-wrap md:items-center md:justify-center gap-3 xl:p-3 pb-28 md:pb-20 overflow-auto">
+        <Suspense fallback={<AppLoadingScreen />}>
+          <Outlet />
+        </Suspense>
+      </main>
+    </div>
+  );
 }

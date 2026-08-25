@@ -430,7 +430,7 @@ export const PRODUCTS: Product[] = [
     name: "UI IDE (temp. name)",
     type: "desktop",
     image: DEFAULT_IMAGE,
-    tags: ["local", "no signature", "on hold"],
+    tags: ["on hold", "local", "no signature"],
     description:
       "UI IDE is a local-first desktop UI design tool for developers and designers who want a lightweight way to lay out interfaces without a full vector editor. Create component files for reusable pieces (buttons, cards, nav bars) and screen files for full app views. Draw with frames, shapes, text, and imported media; organize work in a layer tree; tune layout and appearance in the inspector; export JSON or raster images when you are ready. Light and dark themes are included. Built with Tauri and React, it stays fast on Windows. No account, no cloud, no lock-in.",
     version: "v0.1.0",
