@@ -87,6 +87,21 @@ Paste a meeting link when you want—Marites joins in a separate browser window 
 
 ---
 
+### UI IDE
+
+<img src="items/ui-ide/assets/32x32.png" align="left" />
+
+**Local-first UI design tool**
+
+Screens and components, layered canvas with inspector, drafts library, and export.  
+Draw frames, shapes, and text; build reusable components for any project.
+
+→ [Open details](items/ui-ide/ui-ide-detail.md)
+
+<br clear="left"/>
+
+---
+
 ## Philosophy
 
 - **Local-first** — your data stays on your device
