@@ -71,11 +71,11 @@ _Screenshots coming soon._
 
 ## Technical Details
 
-|                |                                                                                                                         |
-| -------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| **Built with** | Tauri 2 (Rust), SQLite (rusqlite), React Router 7, React 19, TanStack Query, Zustand, Tailwind CSS 4, Radix UI / shadcn |
-| **License**    | MIT                                                                                                                     |
-| **Source**     | [GitHub](https://github.com/Argel/trash-tauri-template)                                                                 |
+|                |                                                         |
+| -------------- | ------------------------------------------------------- |
+| **Built with** | Tauri v2 + React + TypeScript + Tailwind CSS + SQLite   |
+| **License**    | MIT                                                     |
+| **Source**     | [GitHub](https://github.com/Argel/trash-tauri-template) |
 
 ---
 

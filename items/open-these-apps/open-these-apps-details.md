@@ -80,11 +80,11 @@ The app is built with [Tauri](https://tauri.app) and [React](https://react.dev),
 
 ## Technical Details
 
-|                |                                                                                                       |
-| -------------- | ----------------------------------------------------------------------------------------------------- |
-| **Built with** | Tauri 2 (Rust), React 19, TypeScript, SQLite, React Query, Tailwind CSS, Shadcn (Radix UI primitives) |
-| **License**    | MIT                                                                                                   |
-| **Source**     | [GitHub](https://github.com/your-username/open-these-apps)                                            |
+|                |                                                            |
+| -------------- | ---------------------------------------------------------- |
+| **Built with** | Tauri v2 + React + TypeScript + Tailwind CSS + SQLite      |
+| **License**    | MIT                                                        |
+| **Source**     | [GitHub](https://github.com/your-username/open-these-apps) |
 
 ---
 

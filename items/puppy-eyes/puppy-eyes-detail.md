@@ -87,11 +87,11 @@ Light and dark themes are included for comfortable day/night usage. The app is b
 
 ## Technical Details
 
-|                |                                                                                    |
-| -------------- | ---------------------------------------------------------------------------------- |
-| **Built with** | Tauri (Rust), SQLite, React Router 7, React Query, Tailwind CSS, Shadcn (Radix UI) |
-| **License**    | MIT                                                                                |
-| **Source**     | [GitHub](https://github.com/your-username/puppy-eyes-desktop)                      |
+|                |                                                               |
+| -------------- | ------------------------------------------------------------- |
+| **Built with** | Tauri v2 + React + TypeScript + Tailwind CSS + SQLite         |
+| **License**    | MIT                                                           |
+| **Source**     | [GitHub](https://github.com/your-username/puppy-eyes-desktop) |
 
 ---
 

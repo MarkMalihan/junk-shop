@@ -100,14 +100,14 @@ The UI includes a **dashboard** (recorder + optional join + schedules + stats + 
 
 ## Technical details
 
-|                 |                                                                                                                       |
-| --------------- | --------------------------------------------------------------------------------------------------------------------- |
-| **Shell**       | Tauri 2 (Rust), Vite, React 19                                                                                        |
-| **UI**          | React Router 7, TanStack Query, Tailwind CSS 4, component library–style UI, toasts, theme switching, resizable panels |
-| **Backend**     | SQLite, audio capture and WAV encoding in Rust; Windows loopback where used                                           |
-| **Meeting bot** | Small Node helper that opens the URL in an automated Chromium build (generic URLs; Meet, Zoom manually tested)        |
-| **License**     | MIT (see `LICENSE`)                                                                                                   |
-| **Source**      | https://github.com/MarkMalihan/marites-bot                                                                            |
+|                 |                                                                                                                |
+| --------------- | -------------------------------------------------------------------------------------------------------------- |
+| **Shell**       | Tauri v2 + React + TypeScript + Tailwind CSS + SQLite                                                          |
+| **UI**          | React Router 7, TanStack Query, Tailwind CSS + component library–style UI                                      |
+| **Backend**     | SQLite, audio capture and WAV encoding in Rust; Windows loopback where used                                    |
+| **Meeting bot** | Small Node helper that opens the URL in an automated Chromium build (generic URLs; Meet, Zoom manually tested) |
+| **License**     | MIT (see `LICENSE`)                                                                                            |
+| **Source**      | https://github.com/MarkMalihan/marites-bot                                                                     |
 
 ---
 

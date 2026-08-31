@@ -91,11 +91,11 @@ Light and dark themes are included, with an optional schedule (e.g. dark mode at
 
 ## Technical Details
 
-|                |                                                                                    |
-| -------------- | ---------------------------------------------------------------------------------- |
-| **Built with** | Tauri (Rust), SQLite, React Router 7, React Query, Tailwind CSS, Shadcn (Radix UI) |
-| **License**    | MIT                                                                                |
-| **Source**     | [GitHub](https://github.com/your-username/local-memo-desktop)                      |
+|                |                                                               |
+| -------------- | ------------------------------------------------------------- |
+| **Built with** | Tauri v2 + React + TypeScript + Tailwind CSS + SQLite         |
+| **License**    | MIT                                                           |
+| **Source**     | [GitHub](https://github.com/your-username/local-memo-desktop) |
 
 ---
 

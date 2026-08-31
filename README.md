@@ -4,116 +4,49 @@
 
 # Janku-ya
 
-_A tiny collection for my random projects._
+_A curated collection of personal projects and experiments._
 
 </div>
 
 ---
 
-## Apps
+## About
 
-### Local Memo
+This repository serves as an index and showcase for my personal software projects—primarily local-first desktop applications built with Tauri and React, along with occasional web experiments. Each project emphasizes privacy, offline functionality, and thoughtful design, often exploring ideas that are "probably worse (and weirder)" but built with curiosity and a bit of spite.
 
-<img src="items/local-memo/assets/32x32.png" align="left" />
-
-**Local-first desktop notes**
-
-Profiles, folders, tags, Markdown, images, and threaded comments.  
-No account. No cloud. Just your notes.
-
-→ [Open details](items/local-memo/local-memo-details.md)
-
-<br clear="left"/>
+Desktop apps share a common foundation of **Tauri + React + SQLite + Tailwind CSS**. Web projects use **React + TypeScript + Tailwind CSS**, with **Dexie (IndexedDB)** powering the Ecommerce Admin prototype.
 
 ---
 
-### Puppy Eyes
+## Projects
 
-<img src="items/puppy-eyes/assets/32x32.png" align="left" />
-
-**Local-first API client**
-
-Workspaces, collections, environments, request editor, and response viewer.  
-Built for speed, privacy, and offline use.
-
-→ [Open details](items/puppy-eyes/puppy-eyes-detail.md)
-
-<br clear="left"/>
-
----
-
-### Open These Apps
-
-<img src="items/open-these-apps/assets/32x32.png" align="left" />
-
-**Launch your app sets in one click**
-
-Group your installed apps (Work, Dev, Content, etc.)  
-and open them all at once.
-
-→ [Open details](items/open-these-apps/open-these-apps-details.md)
-
-<br clear="left"/>
-
----
-
-### Local Code Archive
-
-<img src="items/local-code-archive/assets/32x32.png" align="left" />
-
-**Less friction when exploring your repos**
-
-Roots, repo picker, tree, and Markdown or syntax-highlighted code in the preview pane.  
-Skim clones on disk without a heavy editor—paths and contents stay local.
-
-→ [Open details](items/local-code-archive/local-code-archive-detail.md)
-
-<br clear="left"/>
-
----
-
-### Marites Bot
-
-<img src="items/marites-bot/assets/32x32.png" align="left" />
-
-**Local-first audio recorder**
-
-Microphone, system sound, or both on Windows; WAV on disk; optional **Whisper CLI** transcripts.  
-Paste a meeting link when you want—Marites joins in a separate browser window as its own attendee.
-
-→ [Open details](items/marites-bot/marites-bot-detail.md)
-
-<br clear="left"/>
-
----
-
-### UI IDE
-
-<img src="items/ui-ide/assets/32x32.png" align="left" />
-
-**Local-first UI design tool**
-
-Screens and components, layered canvas with inspector, drafts library, and export.  
-Draw frames, shapes, and text; build reusable components for any project.
-
-→ [Open details](items/ui-ide/ui-ide-detail.md)
-
-<br clear="left"/>
+| Project                | Description                                                                                                 | Tech Stack                                            | Status          | Details                                                                    |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | --------------- | -------------------------------------------------------------------------- |
+| **Local Memo**         | Local-first notes app with profiles, folders, tags, Markdown, image attachments, and threaded comments.     | Tauri v2 + React + TypeScript + Tailwind CSS + SQLite | Active          | [View details](items/local-memo/local-memo-details.md)                     |
+| **Puppy Eyes**         | Local-first API client with workspaces, collections, environments, request editor, and response viewer.     | Tauri v2 + React + TypeScript + Tailwind CSS + SQLite | Active          | [View details](items/puppy-eyes/puppy-eyes-detail.md)                      |
+| **Open These Apps**    | Desktop launcher to organize installed apps into groups and launch them all at once.                        | Tauri v2 + React + TypeScript + Tailwind CSS + SQLite | Active          | [View details](items/open-these-apps/open-these-apps-details.md)           |
+| **Local Code Archive** | Explore cloned repos with workspace roots, repo picker, file tree, and Markdown/syntax-highlighted preview. | Tauri v2 + React + TypeScript + Tailwind CSS + SQLite | Active          | [View details](items/local-code-archive/local-code-archive-detail.md)      |
+| **Marites Bot**        | Local-first audio recorder (mic/system/both) with optional meeting bot and Whisper CLI transcription.       | Tauri v2 + React + TypeScript + Tailwind CSS + SQLite | Active          | [View details](items/marites-bot/marites-bot-detail.md)                    |
+| **UI IDE**             | Local-first UI design tool for reusable components and screens, with layered canvas, inspector, and export. | Tauri v2 + React + TypeScript + Tailwind CSS + SQLite | In development  | [View details](items/ui-ide/ui-ide-detail.md)                              |
+| **Restaurant Menu**    | Static website showcasing Filipino cuisine with digital menu, food galleries, and self-ordering kiosk.      | React + TypeScript + Tailwind CSS                     | Static showcase | [View live](https://static-websites-nu.vercel.app/project/resto-menu)      |
+| **Company Profile**    | Professional corporate website template with homepage, services, and contact section.                       | React + TypeScript + Tailwind CSS                     | Static showcase | [View live](https://static-websites-nu.vercel.app/project/company-profile) |
+| **Ecommerce Admin**    | Admin dashboard for products, categories, inventory, and orders with local-first IndexedDB storage.         | React + TypeScript + Tailwind CSS + Dexie             | Prototype       | [View live](https://demo-nyo.vercel.app/prototype/ecommerce-admin)         |
 
 ---
 
 ## Philosophy
 
-- **Local-first** — your data stays on your device
-- **No accounts** — no signups, no tracking
-- **Fast & lightweight** — built with Tauri + Rust
-- **Probably worse (and weirder)** — existing ideas, rebuilt with unnecessary (but fun, ig) features… or trash in general
+- **Local-first** — Your data stays on your device
+- **No accounts** — No sign-ups, no tracking, no lock-in
+- **Fast & lightweight** — Built with efficient frameworks (Tauri, React)
+- **Intentional constraints** — Exploring ideas through thoughtful limitations
+- **Probably worse (and weirder)** — Existing concepts rebuilt with unnecessary (but fun) features… or trash in general
 
 ---
 
 ## 📦 More Coming Soon
 
-This is a growing collection. Expect more weird, useful, and tiny tools.
+This is a growing collection. Expect more weird, useful, and tiny tools that challenge conventional software assumptions.
 
 ---
 

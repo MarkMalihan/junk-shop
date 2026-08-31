@@ -86,11 +86,11 @@ The UI includes **light and dark** themes for comfortable reading. The app is bu
 
 ## Technical Details
 
-|                |                                                                                 |
-| -------------- | ------------------------------------------------------------------------------- |
-| **Built with** | Tauri (Rust), SQLite, React Router 7, React Query, Tailwind CSS, Radix-based UI |
-| **License**    | MIT                                                                             |
-| **Source**     | See your repository hosting page for the canonical URL                          |
+|                |                                                        |
+| -------------- | ------------------------------------------------------ |
+| **Built with** | Tauri v2 + React + TypeScript + Tailwind CSS + SQLite  |
+| **License**    | MIT                                                    |
+| **Source**     | See your repository hosting page for the canonical URL |
 
 ---
 
